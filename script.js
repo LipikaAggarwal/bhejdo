@@ -43,8 +43,8 @@ function setAmount(amount) {
     );
   });
 
-  paymentHint.textContent =
-    `Selected: ₹${amount} · No pressure. Bas dil se. ♡`;
+paymentHint.innerHTML =
+  `<strong>Selected: ₹${amount}</strong> · <strong class="dil-bada">Wah, dil bada hai! ♡</strong>`;
 }
 
 
@@ -74,8 +74,8 @@ customAmount.addEventListener("input", () => {
   ) {
     selectedAmount = amount;
 
-    paymentHint.textContent =
-      `Selected: ₹${amount} · Wah, dil bada hai! ♡`;
+paymentHint.innerHTML =
+  `<strong>Selected: ₹${amount}</strong> · <strong class="dil-bada">Wah, dil bada hai! ♡</strong>`;
 
   } else {
 
